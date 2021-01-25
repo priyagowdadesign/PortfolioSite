@@ -1,0 +1,115 @@
+/* Priya Portfolio Brand colors */
+/* Colors used:
+Primary Color (pale light blue): #c0e1e1 ;
+Secondary Color 1 (dark brown): #524c4c ;
+Secondary Color 2 (pale blush pink): #faf8f8 ;
+Secondary Color 3 (darker teal): #558282 ;
+
+/* Typography used:
+“Belleza” for header;
+“News cycle” for Body;
+*/
+body {
+  background-color: #faf8f8;
+  font-family: 'News cycle', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #524c4c;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Belleza', sans-serif;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #558282;
+  text-decoration: none;
+  /* No underlining */
+}
+
+a:hover,
+a:focus {
+  color: #524c4c;
+  text-decoration: underline;
+}
+
+a:active {
+  /* selected link */
+  color: #524c4c;
+}
+
+/* Button - Read more */
+.button {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #c0e1e1;
+  color: #524c4c;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #524c4c;
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button:active {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+/* End Button */
+/* Button - contact */
+.button.contact {
+  background-color: transparent;
+  color: #558282;
+  text-transform: uppercase;
+  border: 2px solid #558282;
+}
+
+.button.contact:hover {
+  background-color: #c0e1e1;
+  color: #ffffff;
+  border: 2px solid #558282;
+}
+
+.button.contact:active {
+  background-color: #558282;
+  color: #ffffff;
+}
+
+/* End Button */
