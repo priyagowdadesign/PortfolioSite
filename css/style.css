@@ -9,8 +9,47 @@ Secondary Color 3 (darker teal): #558282 ;
 “Belleza” for header;
 “News cycle” for Body;
 */
+/* LAYOUT STYLING */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+.logo {
+  max-width: 250px;
+  /* Logo should not max 250px */
+}
+
+header {
+  background-color: #c0e1e1;
+  /*faf8f8*/
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  /*margin: 10px;*/
+  /* border-bottom: 2px solid #524c4c; */
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  width: 100%
+}
+
+main {
+  padding-top: 133px;
+  display: inline-block;
+  width: 100%
+}
+
 body {
-  background-color: #faf8f8;
+  background-color: #ffffff;
   font-family: 'News cycle', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -18,9 +57,94 @@ body {
   color: #524c4c;
 }
 
+footer {
+  background-color: #faf8f8;
+  /*faf8f8*/
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  /*margin: 10px;*/
+  /* border-bottom: 2px solid #524c4c; */
+  -webkit-box-shadow: 0px 5px 7px 7px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 5px 7px 7px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 5px 7px 7px rgba(50, 50, 50, 0.75);
+  width: 100%
+}
+
+/* selects unordered lists within the Nav element */
+nav>ul, footer>div>div>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Place all Nav list elements in 1 line/row */
+nav>ul>li, footer>div>div>ul>li {
+  display: inline-block;
+  /*  width: 100% */
+}
+
+/* styling for each Nav list element */
+nav>ul>li>a {
+  padding: 0 15px;
+  font-family: 'Belleza', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #558282;
+}
+
+/* footer - styling for each socialmedia Icon in footer */
+footer>div>div>ul>li {
+  padding: 15px;
+}
+
+/* styling for visited, on-hover and focus element */
+nav>ul>li>a:visited,
+nav>ul>li>a:hover,
+nav>ul>li>a:focus {
+  background-color: #faf8f8;
+  color: #524c4c;
+}
+
+/* styling for active element */
+nav>ul>li>a:active {
+  color: #524c4c;
+}
+
+/* For line below 'Read more' button */
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #524c4c;
+}
+
+/* Centers text for h1 */
+#hero h1 {
+  text-align: center;
+}
+
+#hero {
+  background-color: #c0e1e1;
+  /*faf8f8*/
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#work h1 {
+  text-align: center;
+}
+
+#work {
+  background-color: #ffffff;
+  /*faf8f8*/
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+/* styling for selected element from the Nav list */
 h1, h2, h3, h4 {
   font-family: 'Belleza', sans-serif;
-  line-height: 1.4;
+  line-height: 1;
 }
 
 h1 {
@@ -53,10 +177,12 @@ a {
   /* No underlining */
 }
 
+/* styling for visited, on-hover and focus element */
 a:hover,
 a:focus {
+  background-color: #faf8f8;
   color: #524c4c;
-  text-decoration: underline;
+  /*  text-decoration: underline;*/
 }
 
 a:active {
@@ -93,8 +219,9 @@ a:active {
 }
 
 /* End Button */
-/* Button - contact */
+/* Button - contact/Email */
 .button.contact {
+  font-family: 'Belleza', sans-serif;
   background-color: transparent;
   color: #558282;
   text-transform: uppercase;
@@ -103,13 +230,13 @@ a:active {
 
 .button.contact:hover {
   background-color: #c0e1e1;
-  color: #ffffff;
+  color: #524c4c;
   border: 2px solid #558282;
 }
 
 .button.contact:active {
   background-color: #558282;
-  color: #ffffff;
+  color: #524c4c;
 }
 
 /* End Button */
