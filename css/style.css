@@ -24,15 +24,17 @@ Secondary Color 3 (darker teal): #558282 ;
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px; //for small screens
   /* Logo should not max 250px */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
   background-color: #c0e1e1;
-  /*faf8f8*/
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   position: fixed;
   /*margin: 10px;*/
   /* border-bottom: 2px solid #524c4c; */
@@ -43,7 +45,8 @@ header {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 56px;
+  /*padding-top: 60px;*/
   display: inline-block;
   width: 100%
 }
@@ -75,12 +78,37 @@ footer {
 nav>ul, footer>div>div>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-/* Place all Nav list elements in 1 line/row */
-nav>ul>li, footer>div>div>ul>li {
-  display: inline-block;
-  /*  width: 100% */
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 /* styling for each Nav list element */
@@ -351,12 +379,35 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  /* Place all Nav list elements in 1 line/row */
+  nav>ul>li, footer>div>div>ul>li {
+    display: inline-block;
+    /*  width: 100% */
+  }
+
   main {
     padding-top: 99px;
   }
 
   body {
     font-size: 18px;
+  }
+
+  .logo {
+    max-width: 250px; //for larger screens
+    /* Logo should not max 250px */
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   .col-md-6 {

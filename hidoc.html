@@ -37,16 +37,19 @@
   <header>
     <!--Navigation-->
     <div class="container">
-      <a href="index.html">
-        <img class="logo" src="img/logo/logo3_1x.png" alt="Priya Gowda logo">
-      </a>
-      <nav>
-        <ul>
-					<li class="container topBotomBordersOut"><a href="index.html">Work</a></li>
-					<li class="container topBotomBordersOut"><a href="about.html">About</a></li>
-					<li class="container topBotomBordersOut"><a href="#contact">Contact</a></li>
-				</ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html">
+          <img class="logo" src="img/logo/logo3_1x.png" alt="Priya Gowda logo">
+        </a>
+        <nav>
+          <ul>
+            <li class="container topBotomBordersOut"><a href="index.html">Work</a></li>
+            <li class="container topBotomBordersOut"><a href="about.html">About</a></li>
+            <li class="container topBotomBordersOut"><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <!--End Navigation-->
   </header>
@@ -132,8 +135,8 @@
   </footer>
   <!--End Footer-->
   <!--Javascript call-->
-  <script type="text/javascript" src="js/script.js">
-  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
   <!--End Javascript call-->
 </body>
 
