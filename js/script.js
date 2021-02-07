@@ -1,4 +1,3 @@
-import $ from 'jquery'
 /* exported menuToggle, closeMenu */
 console.log('Hi there, Welcome to my Portfolio site! - Priya Bachegowda')
 
