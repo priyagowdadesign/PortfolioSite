@@ -1,4 +1,5 @@
 /* Priya Portfolio Brand colors */
+
 /* Colors used:
 Primary Color (pale light blue): #c0e1e1 ;
 Secondary Color 1 (dark brown): #524c4c ;
@@ -9,6 +10,7 @@ Secondary Color 3 (darker teal): #558282 ;
 “Belleza” for header;
 “News cycle” for Body;
 */
+
 /* LAYOUT STYLING */
 * {
   box-sizing: border-box;
@@ -20,12 +22,15 @@ Secondary Color 3 (darker teal): #558282 ;
 
 .row {
   margin: 25px 0;
+
   /* 25px top and bottom, 0 left and right */
 }
 
 .logo {
-  max-width: 150px; //for small screens
+  /* for small screens */
+
   /* Logo should not max 250px */
+  max-width: 150px;
 }
 
 html {
@@ -36,23 +41,26 @@ header {
   background-color: #c0e1e1;
   padding: 10px 0 4px;
   position: fixed;
-  /*margin: 10px;*/
-  /* border-bottom: 2px solid #524c4c; */
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  width: 100%
+
+  /* margin: 10px; */
+
+  /* border-bottom: 2px solid #524c4c;
+  -webkit-box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75); */
+  box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.75);
+  width: 100%;
 }
 
 main {
   padding-top: 56px;
-  /*padding-top: 60px;*/
+
+  /* padding-top: 60px; */
   display: inline-block;
-  width: 100%
+  width: 100%;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'News cycle', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -62,20 +70,24 @@ body {
 
 footer {
   background-color: #faf8f8;
-  /*faf8f8*/
+
+  /* faf8f8 */
   text-align: center;
   padding: 10px 0;
   position: absolute;
-  /*margin: 10px;*/
-  /* border-bottom: 2px solid #524c4c; */
-  -webkit-box-shadow: 0px 5px 7px 7px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 0px 5px 7px 7px rgba(50, 50, 50, 0.75);
-  box-shadow: 0px 5px 7px 7px rgba(50, 50, 50, 0.75);
-  width: 100%
+
+  /* margin: 10px; */
+
+  /* border-bottom: 2px solid #524c4c;
+  -webkit-box-shadow: 0 5px 7px 7px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0 5px 7px 7px rgba(50, 50, 50, 0.75); */
+  box-shadow: 0 5px 7px 7px rgba(50, 50, 50, 0.75);
+  width: 100%;
 }
 
 /* selects unordered lists within the Nav element */
-nav>ul, footer>div>div>ul {
+nav > ul,
+footer > div > div > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -85,7 +97,8 @@ nav>ul, footer>div>div>ul {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -101,18 +114,18 @@ nav>ul, footer>div>div>ul {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
 /* styling for each Nav list element */
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   font-family: 'Belleza', sans-serif;
   text-transform: uppercase;
@@ -132,29 +145,31 @@ nav>ul>li>a:focus {
 nav>ul>li>a:active {
   color: #524c4c;
 } */
+
 /* footer - styling for each socialmedia Icon in footer */
-footer>div>div>ul>li {
+footer > div > div > ul > li {
   padding: 15px;
 }
 
-/* footer Social media icons - styling*/
-footer>div>div>ul>li>a {
+/* footer Social media icons - styling */
+footer > div > div > ul > li > a {
   background-color: transparent;
   color: #558282;
 }
 
-/*footer>div>div>ul>li>a:visited,*/
-footer>div>div>ul>li>a:hover,
-footer>div>div>ul>li>a:focus {
+/* footer>div>div>ul>li>a:visited */
+footer > div > div > ul > li > a:hover,
+footer > div > div > ul > li > a:focus {
   background-color: transparent;
   color: #524c4c;
 }
 
-footer>div>div>ul>li>a:active {
+footer > div > div > ul > li > a:active {
   color: #524c4c;
 }
 
-/* END - footer Social media icons - styling*/
+/* END - footer Social media icons - styling */
+
 /* For line below 'Read more' button */
 #work .row {
   padding-bottom: 25px;
@@ -164,7 +179,8 @@ footer>div>div>ul>li>a:active {
 #hero {
   text-align: center;
   background-color: #c0e1e1;
-  /*faf8f8*/
+
+  /* faf8f8 */
   padding: 20px 0;
   width: 100%;
 }
@@ -173,20 +189,25 @@ footer>div>div>ul>li>a:active {
   display: block;
 }
 
-#work h1, h2 {
+#work h1,
+h2 {
   text-align: center;
 }
 
 #work {
-  background-color: #ffffff;
-  /*faf8f8*/
+  background-color: #fff;
+
+  /* faf8f8 */
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
 
 /* styling for selected element from the Nav list */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Belleza', sans-serif;
   line-height: 1;
 }
@@ -219,6 +240,7 @@ a {
   color: #558282;
   text-decoration: none;
   transition: 0.2s opacity;
+
   /* No underlining */
 }
 
@@ -229,13 +251,13 @@ a:visited {
   /*background-color: #faf8f8;
   color: #524c4c;
   /*  text-decoration: underline;
-}*/
+} */
 a:active {
   /* selected link */
   color: #524c4c;
 }
 
-/* Button - Read more*/
+/* Button - Read more */
 .button {
   display: inline-block;
   background-color: #c0e1e1;
@@ -262,6 +284,7 @@ a:active {
 }
 
 /* End Button */
+
 /* Button - contact/Email */
 .button.contact {
   font-family: 'Belleza', sans-serif;
@@ -285,22 +308,10 @@ a:active {
 }
 
 /* End Button */
+
 /* ==============================
 CSS Animation
 ================================= */
-@keyframes color-change {
-  from {
-    fill: #edc655;
-  }
-
-  to {
-    fill: #f76414;
-  }
-
-  /*0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}*/
-}
 
 .sun {
   animation-duration: 4s;
@@ -308,10 +319,16 @@ CSS Animation
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+
   /* OR
   .sun {
   animation: 4s color-change infinite alternate linear;
-  }*/
+  } */
+}
+
+@keyframes color-change {
+  from { fill: red; }
+  to { fill: yellow; }
 }
 
 @keyframes cloud-move {
@@ -348,8 +365,10 @@ CSS Animation
 
 /* END - CSS Animation
 
-/*Media Queries */
-/*Original layout above is based on small screen sizes (mobile-first!)*/
+/* Media Queries */
+
+/* Original layout above is based on small screen sizes (mobile-first!) */
+
 /* ==============================
 Common Styles for all device sizes
 ================================= */
@@ -379,14 +398,16 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 1em 0;
   }
 
   /* Place all Nav list elements in 1 line/row */
-  nav>ul>li, footer>div>div>ul>li {
+  nav > ul > li,
+  footer > div > div > ul > li {
     display: inline-block;
-    /*  width: 100% */
+
+    /* width: 100% */
   }
 
   main {
@@ -398,7 +419,8 @@ Medium devices (640px and larger)
   }
 
   .logo {
-    max-width: 250px; //for larger screens
+    max-width: 250px; /* for larger screens */
+
     /* Logo should not max 250px */
   }
 
@@ -419,18 +441,19 @@ Medium devices (640px and larger)
   }
 
   /* styling for each Nav list elements */
-  nav>ul>li>a {
-    /*  margin: 0px 10px;*/
-    padding: 10px 10px;
+  nav > ul > li > a {
+    /*  margin: 0px 10px; */
+    padding: 10px;
     position: relative;
     z-index: 0;
     cursor: pointer;
   }
 
   /* Top and Bottom borders go out */
-  li.topBotomBordersOut a:before, li.topBotomBordersOut a:after {
+  li.topBotomBordersOut a::before,
+  li.topBotomBordersOut a::after {
     position: absolute;
-    left: 0px;
+    left: 0;
     width: 100%;
     height: 2px;
     background: #524c4c;
@@ -439,19 +462,20 @@ Medium devices (640px and larger)
     transition: all 0.3s;
   }
 
-  li.topBotomBordersOut a:before {
-    top: 0px;
+  li.topBotomBordersOut a::before {
+    top: 0;
     transform: translateY(10px);
   }
 
-  li.topBotomBordersOut a:after {
-    bottom: 0px;
+  li.topBotomBordersOut a::after {
+    bottom: 0;
     transform: translateY(-10px);
   }
 
-  li.topBotomBordersOut a:hover:before, li.topBotomBordersOut a:hover:after {
+  li.topBotomBordersOut a:hover::before,
+  li.topBotomBordersOut a:hover::after {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 }
 
@@ -481,11 +505,27 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+  /*
+  .container {
+    max-width: 1680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  */
+}
 
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media only screen and (min-width: 1920px) {}
+@media only screen and (min-width: 1920px) {
+  /*
+  .container {
+    max-width: 2048px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  */
+}
 
-/*End - Media Queries */
+/* End - Media Queries */
