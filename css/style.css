@@ -148,6 +148,7 @@ nav>ul>li>a:active {
 
 /* footer - styling for each socialmedia Icon in footer */
 footer > div > div > ul > li {
+  display: inline-block;
   padding: 15px;
 }
 
