@@ -3,6 +3,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="author" content="Priya Gowda">
   <meta name="description" content="Priya About Page">
   <!--Icons from font-awesome-->
@@ -45,6 +46,7 @@
           <ul>
             <li class="container topBotomBordersOut"><a href="index.html">Work</a></li>
             <li class="container topBotomBordersOut"><a href="about.html">About</a></li>
+            <li class="container topBotomBordersOut"><a href="files/Priya-UIResume.pdf" target="_blank" download>Resume</a></li>
             <li class="container topBotomBordersOut"><a href="#contact" onclick="closeMenu()">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="javascript:menuToggle()"><i class="fa fa-bars"></i></a></li>
           </ul>
@@ -58,20 +60,17 @@
   <main>
     <div id="work">
       <div class="container">
-        <h1>About</h1>
+        <h1>About me</h1>
         <div class='row'>
-          <div>
+          <div class='column col-lg-5'>
             <picture>
               <source srcset="img/profile_1x.png" media="(max-width:767px)">
               <img src="img/profile_2x.png" alt="Priya profile pic">
             </picture>
           </div>
-        </div>
-        <div class='row'>
-          <div>
-            <h2>My Story</h2>
+          <div class='column col-lg-7'>
             <p>
-              I am a UI Designer passionate about creating aesthetic and intuitive UI design.
+              I'm Priya, a UI Designer passionate about creating aesthetic and intuitive UI design.
               I have a rich background in Software Development including both Frontend and Backend systems
               that help me understand Software systems from a technical perspective and I hope to leverage
               this to become a better UI Designer and a great overall team player.
@@ -89,9 +88,8 @@
           </div>
         </div>
         <div class='row'>
-          <h2>Skills & Tools</h2>
           <div class="col-md-6">
-            <h3>Relevant Skills</h3>
+            <h3>My Skills</h3>
             <ul>
               <li>User Interface Design</li>
               <li>Visual Design</li>
@@ -134,8 +132,8 @@
   <footer id="contact">
     <div class="container">
       <h2>Get in Touch</h2>
-      <p>Do you like my work and want to discuss opportunities? Please get in touch:
-        <a href="tel:+12488823776">+1 (248)882-3776</a> or <a href="mailto:priya.bachegowda@gmail.com">Prefer sending an email?</a>
+      <p>Do you like my work and want to discuss opportunities?
+        <a href="mailto:priya.bachegowda@gmail.com">Contact me</a>
       </p>
       <div>
         <a href="mailto:priya.bachegowda@gmail.com" class="button contact">Send me an email</a>
@@ -164,9 +162,8 @@
             </a>
           </li>
         </ul>
-
       </div>
-      <p>Copyright Priya Bachegowda 2020</p>
+      <h4 id="copyright">Designed & developed by © Priya Bachegowda 2021</h4>
     </div>
   </footer>
   <!--End Footer-->
