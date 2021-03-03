@@ -498,6 +498,10 @@ Large devices (1024px or larger)
     margin-right: auto;
   }
 
+  .col-lg-4 {
+    width: 30%;
+  }
+
   .col-lg-5 {
     width: 40%;
   }
@@ -508,6 +512,10 @@ Large devices (1024px or larger)
 
   .col-lg-7 {
     width: 60%;
+  }
+
+  .col-lg-8 {
+    width: 70%;
   }
 }
 
